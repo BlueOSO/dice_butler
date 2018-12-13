@@ -2,7 +2,6 @@ version: '3'
 services:
   bot:
     build: .
-    container_name: dice_butler_bot
     volumes:
       - .:/usr/src/app
     command: 'python dice_butler.py'
