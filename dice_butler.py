@@ -1,7 +1,7 @@
 import discord
 import random
 
-TOKEN = ''
+TOKEN = 'os.environ['BOT_TOKEN']'
 
 MAX_DICE = 20
 MAX_VALUE = 100
