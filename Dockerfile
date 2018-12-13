@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3-alpine
 add . /code
 WORKDIR /code
 RUN pip install -r requirements.txt
