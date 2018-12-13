@@ -1,9 +1,12 @@
 version: '3'
-
 services:
-  webapp:
+  bot:
     build: .
-    ports:
-    - "5000:5000"
+    container_name: dice_butler_bot
     volumes:
-    - .:/code
+      - .:/usr/src/app
+    command: 'python dice_butler.py'
+    depends_on:
+      - alpine
+  alpine:
+    image: python:3.6-alpine

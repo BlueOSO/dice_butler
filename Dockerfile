@@ -1,6 +1,9 @@
-FROM python:3-alpine
-ADD requirements.txt /code
-ADD dice_butler.py /code
-WORKDIR /code
-RUN pip install -r requirements.txt
-CMD ["python", "code/dice_butler.py"]
+FROM python:3.6-alpine
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+COPY requirements.txt /usr/src/app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . /usr/src/app
