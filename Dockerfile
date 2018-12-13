@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM ubuntu:16.04
 add . /code
 WORKDIR /code
 RUN pip install -r requirements.txt
