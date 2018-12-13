@@ -1,1 +1,5 @@
 version: '3'
+
+services:
+  webapp:
+    image: alpine:3.4
