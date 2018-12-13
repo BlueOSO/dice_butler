@@ -2,4 +2,4 @@ version: '3'
 
 services:
   webapp:
-    image: 3.6-alpine
+    image: python:3.6-alpine
