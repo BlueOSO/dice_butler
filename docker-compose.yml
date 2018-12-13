@@ -3,8 +3,3 @@ services:
   bot:
     image: dicebutler-bot
     build: .
-    command: 'python dice_butler.py'
-    volumes:
-      - .:/usr/src/app
-    ports:
-      - "8000:8000"
