@@ -1,5 +1,6 @@
 FROM python:3-alpine
-add . /code
+ADD requirements.txt /code
+ADD dice_butler.py /code
 WORKDIR /code
 RUN pip install -r requirements.txt
-CMD ["python", "dice_butler.py"]
+CMD ["python", "code/dice_butler.py"]
