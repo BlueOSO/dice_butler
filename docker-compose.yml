@@ -1,11 +1,8 @@
-version: '3.3'
+version: '3'
 services:
   bot:
     build: .
+    command: 'python dice_butler.py'
     volumes:
       - .:/usr/src/app
-    command: 'python dice_butler.py'
-    depends_on:
-      - alpine
-  alpine:
-    image: python:3.6-alpine
+    ports: "8000:8000"
