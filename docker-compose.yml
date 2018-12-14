@@ -1,4 +1,4 @@
 version: '3'
 services:
   bot:
-    image: "python:3.6-alpine"
+    image: "alpine"
